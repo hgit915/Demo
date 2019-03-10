@@ -1,0 +1,430 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* common */
+
+body {
+    font-family: 微軟正黑體;
+}
+
+/* 
+a {
+    text-decoration: none;
+} */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header topmenu */
+
+.topmenu {
+    background: #f6f6f6;
+    padding: 15px;
+}
+
+.topmenu ul {
+    float: right;
+}
+
+.topmenu li {
+    float: left;
+}
+
+.topmenu img {
+    margin-right: 5px;
+}
+
+.topmenu .fb {
+    color: #4460a0;
+    margin-right: 15px;
+}
+
+.topmenu .twitter {
+    color: #00aaec;
+}
+
+.topmenu a {
+    text-decoration: none;
+}
+
+.topmenu a:hover {
+    color: white;
+    background: salmon;
+    border-radius: 10%;
+}
+
+.topmenu .br {
+    height: 20px;
+    border-right: 3px solid gray;
+    margin-right: 15px;
+}
+
+/* header logo */
+
+.header h1 {
+    float: left;
+}
+
+.header .logo {
+    display: block;
+    width: 170px;
+    height: 36px;
+    background: url(../img/logo.png)no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* header menu */
+
+.header .menu {
+    float: right;
+    padding-bottom: 10px;
+}
+
+.header .menu li {
+    margin-right: 25px;
+    float: left;
+    line-height: 36px;
+}
+
+.header .menu a {
+    color: #00cc99;
+    font-size: 21px;
+    text-decoration: none;
+}
+
+.header .menu a:hover {
+    color: red;
+    border-bottom: 5px solid #00cc99;
+    padding-bottom: 10px;
+}
+
+/* banner */
+
+.header .banner {
+    height: 346px;
+    background: url("../img/banner.png") repeat;
+    position: relative;
+}
+
+.header .banner-text {
+    font-size: 40px;
+    position: absolute;
+    color: white;
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+}
+
+.header .banner .banner-text p {
+    height: 50px;
+    padding-left: 20px;
+}
+
+/*content*/
+
+/* content lesson-list */
+
+.content .lesson-list li {
+    float: left;
+    width: 308px;
+    height: 400px;
+    margin: 50px 12px 50px 12px;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 5px 20px #d6d6d6;
+}
+
+.content .lesson-list .lesson-img {
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.content .lesson-list img {
+    vertical-align: middle;
+}
+
+.content .lesson-list h3 {
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.content .lesson-list span {
+    line-height: 30px;
+}
+
+.content .lesson-list p {
+    line-height: 30px;
+}
+
+/* content lesson */
+
+.content h2 {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 24px;
+}
+
+.lesson {
+    width: 900px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.lesson th {
+    font-weight: bolder;
+    text-align: left;
+    background: #f7f7f7;
+    vertical-align: middle;
+}
+
+.lesson tr {
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+}
+
+.lesson td {
+    vertical-align: middle;
+}
+
+.lesson .point {
+    color: #00a67d;
+}
+
+/* content message */
+
+.message {
+    margin-top: 50px;
+    padding-top: 30px;
+    background-image: linear-gradient(#01644C, #039673);
+}
+
+.message p {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 5px;
+}
+
+.message .message-box {
+    float: left;
+    width: 500px;
+    padding: 30px;
+}
+
+.message .input-box {
+    float: left;
+    width: 500px;
+    padding: 20px;
+    position: relative;
+}
+
+.message .message-box textarea {
+    width: 450px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message .input-box label {
+    display: block;
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+.message .input-box input {
+    margin: 5px;
+    height: 30px;
+    width: 450px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.message .input-box select {
+    margin: 5px;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.message .input-box .btn {
+    width: 70px;
+    height: 32px;
+    background: #7fd1bd;
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.message .input-box .btn:hover {
+    background: darkorange;
+}
+
+/*footer*/
+
+.footer {
+    margin-top: 20px;
+    height: 100px;
+}
+
+.footer .contact {
+    float: right;
+}
+
+.footer li {
+    margin: 8px;
+}
+
+.footer span {
+    color: #e12d80;
+}

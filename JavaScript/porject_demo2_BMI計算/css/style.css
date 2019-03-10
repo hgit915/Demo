@@ -1,0 +1,404 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+body {
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+    background: #eeebebe8;
+}
+
+.header {
+    height: 300px;
+    background: #424242;
+    margin-bottom: 48px;
+}
+
+.logo {
+    float: left;
+    margin-left: 173px;
+    margin-top: 92px;
+}
+
+.information {
+    float: left;
+    margin-left: 97px;
+    margin-top: 74px;
+}
+
+
+.information label {
+    display: inline-block;
+    font-size: 18px;
+    color: #FFD366;
+    margin-bottom: 7px;
+}
+
+.information input {
+    width: 250px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+}
+
+.information input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+
+.result {
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: #FFD366;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #424242;
+    text-align: center;
+    line-height: 120px;
+    margin-left: 53px;
+    margin-top: 92px;
+
+}
+
+.result_caculate {
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: #FFD366;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #424242;
+    text-align: center;
+    line-height: 120px;
+    margin-left: 53px;
+    margin-top: 92px;
+    position: relative;
+}
+
+.result_caculate .bmi_content {
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0.8;
+}
+
+.result_caculate .bmi {
+    font-size: 14px;
+}
+
+.refresh {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-image: url(../img/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 過輕 */
+.underweight {
+    border: 6px solid #31BAF9;
+    color: #31BAF9;
+    background: none;
+}
+
+/* 理想 */
+.normal_weight {
+    border: 6px solid #86D73E;
+    color: #86D73E;
+    background: none;
+}
+
+/* 過重 */
+.over_weight {
+    border: 6px solid #FF982D;
+    color: #FF982D;
+    background: none;
+}
+
+/* 輕、中度肥胖 */
+.slight_middly_obesity {
+    border: 6px solid #FF6C02;
+    color: #FF6C02;
+    background: none;
+}
+
+
+/* 重度肥胖 */
+.extreme_obesity {
+    border: 6px solid #FF1200;
+    color: #FF1200;
+    background: none;
+}
+
+.result:hover {
+    background: #FFD366;
+    box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+    cursor: pointer;
+}
+
+.result:active {
+    background: #DEA921;
+}
+
+.bmi_text {
+    display: inline-block;
+    padding-top: 137px;
+    margin-left: 18px;
+    font-size: 32px;
+    color: white;
+}
+
+.overweight {
+    font-size: 32px;
+    color: #FF1200;
+}
+
+.result_overweight {
+    border: 6px solid #FF1200;
+}
+
+.content {
+    width: 624px;
+    margin: 0 auto;
+    /* border: 2px solid orange; */
+    margin-bottom: 58px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #424242;
+    margin-bottom: 36px;
+}
+
+
+.bmi_detail {
+    margin-bottom: 16px;
+}
+
+.bmi_detail li {
+    height: 62px;
+    line-height: 62px;
+    margin-bottom: 25px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bmi_detail .list_title {
+    display: inline-block;
+    width: 90px;
+}
+
+.bmi_detail span {
+    font-size: 12px;
+
+}
+
+.bmi_detail span:not(.detail_title) {
+    font-size: 20px;
+    margin-left: 7px;
+    vertical-align: top;
+}
+
+
+/* 過輕 */
+#underweight {
+    border-left: 6px solid #31BAF9;
+
+}
+
+/* 理想 */
+#normal_weight {
+    border-left: 6px solid #86D73E;
+
+}
+
+/* 過重 */
+#over_weight {
+    border-left: 6px solid #FF982D;
+
+}
+
+/* 輕、中度肥胖 */
+#slight_middly_obesity {
+    border-left: 6px solid #FF6C02;
+
+}
+
+
+/* 重度肥胖 */
+#extreme_obesity {
+    border-left: 6px solid #FF1200;
+
+}
+
+
+
+.footer {
+    height: 90px;
+    background: #FFD366;
+    position: relative;
+
+}
+
+.logo2 {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: calc(50% - 26px);
+    left: calc(50% - 26px);
+}
