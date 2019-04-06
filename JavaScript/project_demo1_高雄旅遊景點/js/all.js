@@ -2704,6 +2704,7 @@ function updateList(e) {
             let str_Ticketinfo = document.createElement('p');
             str_Ticketinfo.innerHTML = '<img class="icon" class="ticket_icon" src="../img/icons_tag.png" alt="">' + data.records[i].Ticketinfo;
 
+            /*Q:appendChild 問題請教 */
             document.querySelector('ul').appendChild(str_li).appendChild(str_open);
             document.querySelector('ul').appendChild(str_li).appendChild(str_Add);
             document.querySelector('ul').appendChild(str_li).appendChild(str_Tel);
