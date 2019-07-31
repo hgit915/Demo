@@ -77,19 +77,9 @@ function calculate(e) {
 
 //header 畫面重構
 function refactor_header(bmi, weight_css, color, text) {
-
-    //先移除result
-    let str_parent = document.querySelector('.header');
     let str_result = document.querySelector('.result');
-    str_parent.removeChild(str_result);
-
-    //並新增result_caculate  
-    let str_result_caculate = document.createElement('div');
-
-    str_result_caculate.innerHTML = `<span class="bmi_content">` + bmi.toString() + `<br> <span class="bmi">BMI</span></span><div class="refresh"></div>`;
-    str_result_caculate.setAttribute('class', 'result_caculate ' + weight_css);
-
-    str_parent.appendChild(str_result_caculate);
+    str_result.innerHTML = `<span class="bmi_content">` + bmi.toString() + `<br> <span class="bmi">BMI</span></span><div class="refresh"></div>`;
+    str_result.setAttribute('class', 'result_caculate ' + weight_css);
 
     document.querySelector('.refresh').setAttribute('style', 'background-color:' + color);
     document.querySelector('.bmi_text').textContent = text;
